@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'FuturaDemiC';
+  src: local("FuturaDemiC"), url("https://nomail.com.ua/files/woff/fa7892c650d8237d04043b1cf3cdc49f.woff") format("woff");
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+}
+
+.header {
+  width: 100%;
+  height: 82px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #131313;
+}
+
+.header .header-logo {
+  font: 0.875em "FuturaDemiC", sans-serif;
+  color: #E3B873;
+  text-transform: uppercase;
+}
+
+.header .header-nav_bar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font: 0.875em "FuturaDemiC", sans-serif;
+  color: #ffffff;
+}
+
+.header .header-nav_bar-list li {
+  margin: 0 0.5em;
+}
+
+.header .header-phone {
+  color: #E3B873;
+}
+/*# sourceMappingURL=style.css.map */
