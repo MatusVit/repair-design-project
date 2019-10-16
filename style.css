@@ -391,10 +391,33 @@ button {
   width: 50%;
 }
 
-.section_advantages .advantages-form {
+.section_advantages .advantages-form form {
   width: 32rem;
   background-color: #131313;
   color: #ffffff;
   padding: 2rem;
+}
+
+.section_advantages .advantages-form .advantages-banner_pig {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2rem;
+  color: #e3b873;
+}
+
+.section_advantages .advantages-form .advantages-banner_pig .advantages-banner_pig-text {
+  padding: 1rem;
+}
+
+.section_fantasies {
+  background: url(assets/images/fantasies-bg.jpg);
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

@@ -302,9 +302,33 @@ button {
   }
 
   .advantages-form {
-    width: 32rem;
-    background-color: $color-bg;
-    color: #ffffff;
-    padding: 2rem;
+    form {
+      width: 32rem;
+      background-color: $color-bg;
+      color: #ffffff;
+      padding: 2rem;
+    }
+    .advantages-banner_pig{
+      
+      display: flex;
+      justify-content: center;  
+      align-items: center;
+      padding-top: 2rem;
+
+        color: $color-accent;
+
+        .advantages-banner_pig-text {
+          padding: 1rem;
+        }
+    }
   }
+}
+
+//-------------------
+//*  >>> Fantasies
+//-------------------
+.section_fantasies {
+  background: url(assets/images/fantasies-bg.jpg);
+  color: #fff;
+
 }
