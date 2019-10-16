@@ -13,9 +13,13 @@ li {
 }
 
 button {
+  padding: 0.75rem 2rem;
+  font-size: 0, 8125rem;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
   background: #E3B873;
-  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border-radius: 2px;
 }
 
@@ -34,7 +38,7 @@ button {
 }
 
 .header .header-logo {
-  font: 0.875em "FuturaDemiC", sans-serif;
+  font: 0.875rem "FuturaDemiC", sans-serif;
   color: #E3B873;
   text-transform: uppercase;
 }
@@ -43,12 +47,12 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font: 0.875em "FuturaDemiC", sans-serif;
+  font: 0.875rem "FuturaDemiC", sans-serif;
   color: #ffffff;
 }
 
 .header .header-nav_bar-list li {
-  margin: 0 0.5em;
+  margin: 0 0.5rem;
 }
 
 .header .header-phone {
