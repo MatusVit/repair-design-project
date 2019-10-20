@@ -23,10 +23,62 @@ button {
     border-radius: 2px;
 }
 
+.line92 {
+    width: 5rem;
+    height: 1px;
+    background-color: $color-accent;
+}
+
+.line32 {
+    width: 2rem;
+    height: 1px;
+    background-color: $color-accent;
+}
+
+.line55 {
+    width: 3.5rem;
+    height: 2px;
+    background-color: $color-accent;
+}
+
+.section_heading {
+    .section_heading-text {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .section_heading-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section_heading-icon-icon {
+        margin: 0 0.5rem;
+    }
+}
+
+.section_heading--left {
+    display: flex;
+    font-size: 1, 6875rem;
+    text-transform: uppercase;
+    color: $color-accent;
+    .line92 {
+        align-self: flex-end;
+        margin-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.section-describe {
+    margin: 2rem auto;
+    text-align: center;
+    max-width: 560px;
+}
+
 //-------------------
 //*  >>> header
 //-------------------
-.header {
+.header,
+footer {
     width: 100%;
     height: 82px;
     display: flex;
@@ -38,6 +90,14 @@ button {
         color: $color-accent;
         text-transform: uppercase;
     }
+
+    .header-nav_bar{
+        @media (max-width: 375px) {
+            display: none;
+        }
+    }
+
+
     .header-nav_bar-list {
         display: flex;
         font: 0.875em "FuturaDemiC", sans-serif;
@@ -45,9 +105,16 @@ button {
         li {
             margin: 0 0.5em;
         }
+        
     }
     .header-phone {
         color: $color-accent;
+    }
+
+    .header-button{
+        @media (max-width: 375px) {
+            display: none;
+        }
     }
 }
 
@@ -60,6 +127,9 @@ button {
     align-items: stretch;
     background-color: $color-bg;
     .main-aside_block {
+        @media (max-width: 375px) {
+            display: none;
+        }
         width: 5%;
         display: flex;
         flex-direction: column;
@@ -83,13 +153,27 @@ button {
         }
     }
     .main-main_block {
+        display: flex;
+        align-items: center;
         width: 95%;
         min-height: 80vh;
         background-image: url(./assets/images/main_block-bg_img.jpg);
         background-size: cover;
         background-position: center;
+        color: #ffffff;
+        .main-main_block-block_content {
+            max-width: 35rem;
+            margin-left: 3rem;
+        }
+        .main-main_block-main_text {
+            
+            text-transform: uppercase;
+        }
     }
     .main-scroll_down_block {
+        @media (max-width: 375px) {
+            display: none;
+        }
         align-self: flex-start;
         width: 15rem;
         height: 6rem;
@@ -113,12 +197,6 @@ button {
 //-------------------
 //*  >>> projects
 //-------------------
-.line92 {
-    width: 5rem;
-    height: 1px;
-    background-color: $color-accent;
-}
-
 .section_projects {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -140,19 +218,8 @@ button {
             }
         }
     }
-    .projects-describe_block-header {
+    .section_heading--left {
         grid-area: 2 / 1 / 3 / 3;
-        display: flex;
-        align-items: stretch;
-        h2 {
-            margin-bottom: 0.5rem;
-            font-size: 1.75rem;
-            text-transform: uppercase;
-        }
-        .line92 {
-            align-self: flex-end;
-            margin-bottom: 1.5rem;
-        }
     }
     .projects-describe_block-describe {
         grid-area: 3 / 1 / 4 / 3;
@@ -182,34 +249,6 @@ button {
 //-------------------
 //*  >>> control
 //-------------------
-
-.line32 {
-    width: 2rem;
-    height: 1px;
-    background-color: $color-accent;
-}
-
-.line55 {
-    width: 3.5rem;
-    height: 2px;
-    background-color: $color-accent;
-}
-
-.section_heading {
-    .section_heading-text {
-        text-align: center;
-        text-transform: uppercase;
-    }
-    .section_heading-icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .section_heading-icon-icon {
-        margin: 0 0.5rem;
-    }
-}
-
 .section_control {
     display: flex;
     flex-direction: column;
@@ -234,31 +273,37 @@ button {
 //-------------------
 //*  >>> Types
 //-------------------
-.types_bock {
+.cards_block {
+    // max-width: 1200px;
+    margin: 2rem 1rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
     align-content: flex-start;
-    .types_bock-type_card {
-        display: flex;
-        flex-direction: column;
-        .types_bock-type_card-describe {
-            width: 20rem;
-            margin: -8rem auto 0;
-            padding: 1rem;
-            background: #fff;
-            box-shadow: 0.25rem 0.25rem 0.5rem 0rem rgba(0, 0, 0, 0.14);
-        }
-        .describe_type_box-price {
-            position: absolute;
-            width: 14.25rem;
-            margin-top: 0.5rem;
-            margin-left: -1rem;
-            padding: 1rem 1.5rem;
-            background: $color-accent;
-            text-align: center;
-            text-transform: uppercase;
-        }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    .card-describe {
+        width: 20rem;
+        margin: -8rem auto 0;
+        padding: 1rem;
+        background: #fff;
+        box-shadow: 0.25rem 0.25rem 0.5rem 0rem rgba(0, 0, 0, 0.14);
+    }
+    .card-box_price {
+        position: absolute;
+        width: 14.25rem;
+        margin-top: 0.5rem;
+        margin-left: -1rem;
+        padding: 1rem 1.5rem;
+        background: $color-accent;
+        text-align: center;
+        text-transform: uppercase;
     }
 }
 
@@ -276,7 +321,7 @@ button {
     }
     .advantages-form {
         form {
-            width: 32rem;
+            max-width: 32rem;
             background-color: $color-bg;
             color: #ffffff;
             padding: 2rem;
@@ -298,6 +343,209 @@ button {
 //*  >>> Fantasies
 //-------------------
 .section_fantasies {
-    background: url(assets/images/fantasies-bg.jpg);
+    background: url(assets/images/fantasies-bg.jpg) no-repeat;
     color: #fff;
+}
+
+.section_fantasies-wrapper {
+    max-width: 64rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 354px);
+    grid-template-rows: repeat(2, 1fr) repeat(2, 5fr) repeat(2, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+}
+
+.fantasies-describe_block {
+    grid-area: 3 / 1 / 6 / 2;
+}
+
+.fantasies-image-1 {
+    grid-area: 2 / 2 / 5 / 3;
+    background: grey;
+}
+
+.fantasies-image-2 {
+    grid-area: 5 / 2 / 8 / 3;
+    background-color: grey;
+}
+
+.fantasies-image-3 {
+    grid-area: 1 / 3 / 4 / 4;
+    background-color: grey;
+}
+
+.fantasies-image-4 {
+    grid-area: 4 / 3 / 7 / 4;
+    background-color: grey;
+}
+
+//-------------------
+//*  >>> Design
+//-------------------
+.section_design {
+    .section-describe {
+        max-width: 760px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+//-------------------
+//*  >>> Steps
+//-------------------
+.section_steps {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0.5fr 2fr 2fr 2fr;
+    color: #ffffff;
+    background-color: $color-bg;
+}
+
+.steps-heading {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.steps-pre_header {
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.steps-describe_step {
+    grid-area: 2 / 1 / 4 / 2;
+}
+
+.steps-block_steps {
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.steps-describe_arrows {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.steps-describe_image {
+    grid-area: 3 / 2 / 5 / 3;
+}
+
+//-------------------
+//*  >>> Team
+//-------------------
+.section_team {
+    .section-describe {
+        max-width: 476px;
+    }
+    .card {
+        position: relative;
+    }
+    .card-describe {
+        width: 76%;
+        margin: -3rem auto 0;
+        padding: 0;
+        text-align: center;
+    }
+    .card-heading {
+        margin: 1rem 0 0;
+    }
+    .card-text {
+        padding: 0.8rem 0;
+    }
+    .card-box_experience {
+        background-color: $color-accent;
+        padding: 0.8rem 0;
+        font-size: 0.8125rem;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    .card-top_icon {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: -35px;
+        left: -35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-accent;
+    }
+    .line55 {
+        margin: 0 auto;
+    }
+}
+
+//-------------------
+//*  >>> Clients
+//-------------------
+.section_clients {
+    .card {
+        width: 376px;
+        height: 428px;
+        box-shadow: 0.25rem 0.25rem 0.5rem 0rem rgba(0, 0, 0, 0.14);
+        align-items: flex-start;
+        position: relative;
+        .card-heading {
+            display: flex;
+            align-items: center;
+            padding: 2rem 1rem 0 1rem;
+        }
+        .card-heading-text {
+            padding-left: 2rem;
+            font-size: 1.125rem;
+            font-weight: bold;
+        }
+        .card-text {
+            padding: 1rem;
+        }
+        .card-bottom_box {
+            width: 294px;
+            height: 54px;
+            background-color: $color-accent;
+            position: absolute;
+            bottom: -5%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .card-bottom {
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            &:first-child {
+                border-right: #ffffff solid 1px;
+            }
+            .card-bottom-text {
+                padding: 0 1rem;
+            }
+        }
+    }
+}
+
+//-------------------
+//*  >>> Questions
+//-------------------
+.section_questions {
+    max-width: 882px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: #ffffff;
+}
+
+.questions-form {
+    max-width: 510px;
+    text-align: center;
+}
+
+//-------------------
+//*  >>> Contacts
+//-------------------
+.contact-map {
+    text-align: center;
+    img {
+        // margin: 2rem auto;
+    }
 }
