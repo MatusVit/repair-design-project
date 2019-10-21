@@ -1,4 +1,35 @@
+// @font-face {
+//   font-family: "FuturaDemiC";
+//   src: local("FuturaDemiC"),
+//     url("https://nomail.com.ua/files/woff/fa7892c650d8237d04043b1cf3cdc49f.woff") format("woff");
+// }
+
 @font-face {
-    font-family: 'FuturaDemiC';
-    src: local('FuturaDemiC'), url('https://nomail.com.ua/files/woff/fa7892c650d8237d04043b1cf3cdc49f.woff') format('woff');
+  font-family: "fontfa7892c650d8237d04043b1cf3cdc49f";
+
+  src: url("https://nomail.com.ua/files/eot/fa7892c650d8237d04043b1cf3cdc49f.eot?#iefix") format("embedded-opentype"),
+    url("https://nomail.com.ua/files/woff/fa7892c650d8237d04043b1cf3cdc49f.woff") format("woff"),
+    url("https://nomail.com.ua/files/woff2/fa7892c650d8237d04043b1cf3cdc49f.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: "FuturaDemiC";
+  src: local("FuturaDemiC"),
+    url("https://nomail.com.ua/files/woff/fa7892c650d8237d04043b1cf3cdc49f.woff") format("woff");
+}
+
+@font-face {
+  font-family: "font363c763618808869720c6ca7b4059566";
+
+  src: url("https://nomail.com.ua/files/eot/363c763618808869720c6ca7b4059566.eot?#iefix") format("embedded-opentype"),
+    url("https://nomail.com.ua/files/woff/363c763618808869720c6ca7b4059566.woff") format("woff"),
+    url("https://nomail.com.ua/files/woff2/363c763618808869720c6ca7b4059566.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "FuturaBookC";
+  src: local("FuturaBookC"),
+    url("https://nomail.com.ua/files/woff/363c763618808869720c6ca7b4059566.woff") format("woff");
+}
+
+@import url("https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic");

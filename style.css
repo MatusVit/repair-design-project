@@ -1,6 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic");
 @font-face {
-  font-family: 'FuturaDemiC';
+  font-family: "fontfa7892c650d8237d04043b1cf3cdc49f";
+  src: url("https://nomail.com.ua/files/eot/fa7892c650d8237d04043b1cf3cdc49f.eot?#iefix") format("embedded-opentype"), url("https://nomail.com.ua/files/woff/fa7892c650d8237d04043b1cf3cdc49f.woff") format("woff"), url("https://nomail.com.ua/files/woff2/fa7892c650d8237d04043b1cf3cdc49f.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "FuturaDemiC";
   src: local("FuturaDemiC"), url("https://nomail.com.ua/files/woff/fa7892c650d8237d04043b1cf3cdc49f.woff") format("woff");
+}
+
+@font-face {
+  font-family: "font363c763618808869720c6ca7b4059566";
+  src: url("https://nomail.com.ua/files/eot/363c763618808869720c6ca7b4059566.eot?#iefix") format("embedded-opentype"), url("https://nomail.com.ua/files/woff/363c763618808869720c6ca7b4059566.woff") format("woff"), url("https://nomail.com.ua/files/woff2/363c763618808869720c6ca7b4059566.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "FuturaBookC";
+  src: local("FuturaBookC"), url("https://nomail.com.ua/files/woff/363c763618808869720c6ca7b4059566.woff") format("woff");
+}
+
+p {
+  font-family: "FuturaBookC", sans-serif;
+  line-height: 1.36;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+  line-height: 1.325;
+}
+
+h1 {
+  font-size: 2.5rem;
 }
 
 ul {
@@ -13,13 +46,14 @@ li {
 }
 
 button {
-  padding: 0.75rem 2rem;
-  font-size: 0, 8125rem;
+  padding: 1.25rem 2rem;
+  font-family: "FuturaDemiC", sans-serif;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
   border: none;
-  text-align: center;
-  text-transform: uppercase;
-  background: #e3b873;
+  background-color: #e3b873;
   border-radius: 2px;
 }
 
@@ -91,22 +125,27 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "FuturaDemiC", sans-serif;
   background-color: #131313;
 }
 
 .header .header-logo,
 footer .header-logo {
-  font: 0.875em "FuturaDemiC", sans-serif;
-  color: #e3b873;
+  min-width: 13rem;
+  margin-left: 5%;
+  -ms-grid-column-align: left;
+      justify-self: left;
   text-transform: uppercase;
+  color: #e3b873;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .header .header-nav_bar,
   footer .header-nav_bar {
     display: none;
@@ -118,7 +157,7 @@ footer .header-nav_bar-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font: 0.875em "FuturaDemiC", sans-serif;
+  font-size: 0.875em;
   color: #ffffff;
 }
 
@@ -129,10 +168,23 @@ footer .header-nav_bar-list li {
 
 .header .header-phone,
 footer .header-phone {
+  min-width: 7.5rem;
+  margin-right: 1rem;
   color: #e3b873;
+  font-size: 0.875em;
 }
 
-@media (max-width: 375px) {
+.header .header-button,
+footer .header-button {
+  margin-right: 3%;
+}
+
+.header .header-button button,
+footer .header-button button {
+  padding: 0.75rem 2rem;
+}
+
+@media (max-width: 1024px) {
   .header .header-button,
   footer .header-button {
     display: none;
@@ -170,19 +222,15 @@ footer .header-phone {
   background-color: #131313;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   .section_main .main-aside_block {
     display: none;
   }
 }
 
-.section_main .main-aside_block .header-logo {
-  font: 0.875rem "FuturaDemiC", sans-serif;
-  color: #e3b873;
-  text-transform: uppercase;
-}
-
 .section_main .main-aside_block .main-aside_block-text {
+  font-family: "FuturaDemiC", sans-serif;
+  font-size: 0.875rem;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
@@ -210,13 +258,51 @@ footer .header-phone {
   color: #ffffff;
 }
 
+@media (max-width: 640px) {
+  .section_main .main-main_block {
+    width: 100%;
+  }
+}
+
 .section_main .main-main_block .main-main_block-block_content {
   max-width: 35rem;
   margin-left: 3rem;
+  line-height: 1.325;
+}
+
+@media (max-width: 640px) {
+  .section_main .main-main_block .main-main_block-block_content {
+    margin-left: 1rem;
+  }
 }
 
 .section_main .main-main_block .main-main_block-main_text {
+  margin: 1.2rem 0;
   text-transform: uppercase;
+}
+
+.section_main .main-main_block .main-main_block-main_text span {
+  color: #e3b873;
+}
+
+.section_main .main-main_block .main-main_block-additional_text {
+  max-width: 26rem;
+  font-size: 1.375rem;
+}
+
+.section_main .main-main_block .main-main_block-additional_text p {
+  margin: 1.2rem 0;
+}
+
+.section_main .main-main_block .main-main_block-buttons button {
+  min-width: 13rem;
+  margin-top: 2.5rem;
+}
+
+.section_main .main-main_block .main_block-buttons-submit {
+  margin-left: 1.25rem;
+  background: none;
+  border: 1px solid #ffffff;
 }
 
 .section_main .main-scroll_down_block {
@@ -237,7 +323,7 @@ footer .header-phone {
   background-color: #131313;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   .section_main .main-scroll_down_block {
     display: none;
   }
@@ -251,7 +337,6 @@ footer .header-phone {
 
 .section_main .main-scroll_down_block .main-scroll_down_block-icon {
   width: 32px;
-  height: 32px;
 }
 
 .section_projects {
@@ -753,5 +838,9 @@ footer .header-phone {
 
 .contact-map {
   text-align: center;
+}
+
+.contact-map img {
+  margin: 2rem auto;
 }
 /*# sourceMappingURL=style.css.map */
