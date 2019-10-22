@@ -1,0 +1,103 @@
+p {
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.36;
+
+  @media (max-width: 375px){
+    font-size: 0.875rem;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+  line-height: 1.325;
+}
+
+h1 {
+  font-size: 2.5rem;
+  @media (max-width: 375px){
+    font-size: 1.4375rem;
+  }
+}
+
+h2 {
+  font-size: 1.688rem;
+  @media (max-width: 375px){
+    font-size: 1.375rem;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  padding: 1.25rem 2rem;
+  font-family: "FuturaDemiC", sans-serif;
+  font-size: 0.8125rem;
+  // line-height: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  background-color: $color-accent;
+  border-radius: 2px;
+}
+
+.line92 {
+  width: 5rem;
+  height: 1px;
+  background-color: $color-accent;
+}
+
+.line32 {
+  width: 2rem;
+  height: 1px;
+  background-color: $color-accent;
+}
+
+.line55 {
+  width: 3.5rem;
+  height: 2px;
+  background-color: $color-accent;
+}
+
+.section_heading {
+  .section_heading-text {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .section_heading-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section_heading-icon-icon {
+    margin: 0 0.5rem;
+  }
+}
+
+.section_heading-left {
+  display: flex;
+  font-size: 1, 6875rem;
+  text-transform: uppercase;
+  color: $color-accent;
+  .line92 {
+    align-self: flex-end;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.section-describe {
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 560px;
+}
