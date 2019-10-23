@@ -1,7 +1,17 @@
+.wrapper_section-projects-control {
+  @media (min-width: 768px) {
+    background: url(assets/images/projects-bg.jpg) center top no-repeat;
+    background-size: 100% 65%;
+  }
+  
+  @media (max-width: 768px) {
+    background-color: $color-bg;
+  }
+}
+
 //-------------------
 //*  >>> projects
 //-------------------
-
 .section_projects {
   padding: 6rem 0 6rem 2rem;
   @media (max-width: 768px) {
@@ -18,7 +28,8 @@
   grid-template-rows: auto;
   grid-gap: 1rem;
 
-  background-color: $color-bg;
+  // background-attachment: fixed;
+
   color: white;
   //   overflow: hidden;
 }
@@ -113,12 +124,11 @@
     }
     align-content: center;
 
-    & img{
-      @media (max-width: 640px){
+    & img {
+      @media (max-width: 640px) {
         width: 36px;
-      }      
+      }
     }
-    
   }
 
   .carousel_block-arrow-left {

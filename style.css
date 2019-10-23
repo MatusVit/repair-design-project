@@ -100,7 +100,12 @@ button {
   background-color: #e3b873;
 }
 
+.section_heading {
+  margin-bottom: 2rem;
+}
+
 .section_heading .section_heading-text {
+  margin: 0 0 0.875rem 0;
   text-align: center;
   text-transform: uppercase;
 }
@@ -401,6 +406,19 @@ footer .header-button button {
   width: 32px;
 }
 
+@media (min-width: 768px) {
+  .wrapper_section-projects-control {
+    background: url(assets/images/projects-bg.jpg) center top no-repeat;
+    background-size: 100% 65%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper_section-projects-control {
+    background-color: #131313;
+  }
+}
+
 .section_projects {
   padding: 6rem 0 6rem 2rem;
   display: -ms-grid;
@@ -410,7 +428,6 @@ footer .header-button button {
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   grid-gap: 1rem;
-  background-color: #131313;
   color: white;
 }
 
@@ -672,12 +689,17 @@ footer .header-button button {
           align-items: center;
 }
 
+.section_control .section_heading-text {
+  color: #ffffff;
+}
+
 .section_control .control-video {
   margin: 0 auto;
 }
 
 .section_control .line55 {
-  margin: 2rem;
+  margin-top: 3.875rem;
+  margin-bottom: 2rem;
 }
 
 .section_control .control-describe {
@@ -686,6 +708,7 @@ footer .header-button button {
 
 .section_control .control-describe p {
   text-align: center;
+  font-size: 1.25rem;
 }
 
 .section_control .control-form_block {
