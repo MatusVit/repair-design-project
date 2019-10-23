@@ -3,14 +3,19 @@
 //-------------------
 
 .section_projects {
-  padding: 0 2rem;
+  padding: 6rem 0 6rem 2rem;
+  @media (max-width: 768px) {
+    padding: 2.25rem 1.125rem;
+  }
   display: grid;
-  grid-template-columns: repeat(2, minmax(375px, 1fr));
-  @media (max-width: 768px){
-    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  grid-template-columns: 2fr 3fr;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
+  }
+  @media (max-width: 640px) {
+    grid-template-columns: repeat(auto-fit, minmax(319px, 1fr));
   }
   grid-template-rows: auto;
-  //   grid-auto-flow: column;
   grid-gap: 1rem;
 
   background-color: $color-bg;
@@ -18,37 +23,114 @@
   //   overflow: hidden;
 }
 .projects-carousel-nav_bar {
-    @media (max-width: 768px){
-        display: none;
-    }
-
+  @media (max-width: 768px) {
+    display: none;
+  }
   order: 1;
   grid-column: 2;
+}
+.projects-nav_bar-list {
+  display: flex;
 
-  .projects-nav_bar-list {
-    display: flex;
+  li {
+    margin-right: 2rem;
+    padding: 0.4375rem 0;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .active {
     color: $color-accent;
-
-    li {
-      margin-left: 2rem;
-      font-size: 0.875rem;
-      text-transform: uppercase;
-    }
+    border-bottom: 1px solid $color-accent;
   }
 }
 
 .projects-heading_block {
-    order: 2;
+  order: 2;
+  .section_heading-left {
+    @media (max-width: 768px) {
+      justify-content: center;
+      h2 {
+        text-align: center;
+      }
+
+      .line92 {
+        display: none;
+      }
+    }
+  }
+
+  .section-describe {
+    text-align: left;
+    @media (max-width: 768px) {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
 }
 
 .projects-carousel-images_block {
   order: 3;
   grid-row: span 3;
 
-  width: 45wv;
   overflow: hidden;
   display: flex;
   flex-wrap: nowrap;
+
+  position: relative;
+
+  @media (max-width: 768px) {
+    .projects-carousel_block-image-item:not(.active) {
+      display: none;
+    }
+  }
+
+  .projects-carousel_block-image-item {
+    margin: 0 1.125rem 0 0;
+    height: 100%;
+    @media (max-width: 768px) {
+      margin: 0;
+      width: 100%;
+    }
+
+    img {
+      // height: 100%;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      object-fit: cover;
+    }
+  }
+  .projects-carousel-arrows {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: 768px) {
+      justify-content: flex-end;
+    }
+    align-content: center;
+
+    & img{
+      @media (max-width: 640px){
+        width: 36px;
+      }      
+    }
+    
+  }
+
+  .carousel_block-arrow-left {
+    @media (min-width: 768px) {
+      display: none;
+    }
+    margin-left: 5%;
+  }
+
+  .carousel_block-arrow-right {
+    margin-right: 5%;
+  }
 }
 
 .projects-carousel-describe_block {
@@ -57,11 +139,49 @@
   grid-template: repeat(2, 1fr) / repeat(2, 1fr);
 }
 
-.projects-carousel-pagination {
-    @media (max-width: 768px){
-        display: none;
-    }
-    order: 5;
+.projects-describe_block-item-title {
+  margin: 0.5rem 0;
+  font-family: "Yeseva One", serif;
+  font-size: 1.125rem;
+  @media (max-width: 375px) {
+    font-size: 0.875rem;
+  }
+  text-transform: uppercase;
+  color: $color-accent;
 }
 
+.projects-describe_block-item-text {
+  margin: 0.5rem 0;
+  font-size: 0.9375rem;
+  @media (max-width: 375px) {
+    font-size: 0.875rem;
+  }
+}
 
+.projects-carousel-pagination {
+  @media (max-width: 768px) {
+    display: none;
+  }
+  order: 5;
+  align-self: end;
+  display: flex;
+  align-items: center;
+}
+
+.projects-carousel-pagination-arrow-left {
+  margin-right: 1.25rem;
+}
+.projects-carousel-pagination-arrow-right {
+  margin-left: 1.25rem;
+}
+.projects-carousel-pagination-circle {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  margin: 0 0.25rem;
+  background: rgba(255, 255, 255, 0.3);
+
+  &.active {
+    background: rgba(255, 255, 255, 1);
+  }
+}

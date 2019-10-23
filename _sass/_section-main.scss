@@ -4,8 +4,8 @@
 
 .section_main {
   display: flex;
-  flex-wrap: wrap;
   align-items: stretch;
+  position: relative;
   background-color: $color-bg;
 
   .main-aside_block {
@@ -73,6 +73,7 @@
 
       p {
         font-size: 1.375rem;
+        line-height: 1.36;
         @media (max-width: 375px) {
           font-size: 1.125rem;
         }
@@ -105,13 +106,14 @@
 }
 
 .main-scroll_down_block {
-  @media (max-width: 640px) {
+  @media (max-width: 768px) {
     display: none;
   }
-  align-self: flex-start;
+ position: absolute;
   width: 15rem;
   height: 6rem;
-  margin-top: -50px;
+  bottom: -48px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
