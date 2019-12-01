@@ -677,6 +677,7 @@ footer .header-button button {
 }
 
 .section_control {
+  padding: 2.25rem 1.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -689,17 +690,38 @@ footer .header-button button {
           align-items: center;
 }
 
+@media (max-width: 768px) {
+  .section_control {
+    margin-top: 2.8rem;
+  }
+}
+
 .section_control .section_heading-text {
   color: #ffffff;
 }
 
 .section_control .control-video {
   margin: 0 auto;
+  max-height: 100%;
+  max-width: 817px;
+}
+
+@media (max-width: 820px) {
+  .section_control .control-video {
+    max-width: 100%;
+  }
 }
 
 .section_control .line55 {
   margin-top: 3.875rem;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .section_control .line55 {
+    margin-top: 1.75rem;
+    margin-bottom: 1.375;
+  }
 }
 
 .section_control .control-describe {
@@ -711,8 +733,190 @@ footer .header-button button {
   font-size: 1.25rem;
 }
 
+@media (max-width: 375px) {
+  .section_control .control-describe p {
+    color: #ffffff;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section_control .control-describe {
+    color: #ffffff;
+  }
+}
+
 .section_control .control-form_block {
-  max-width: 43rem;
+  margin-top: 5.75rem;
+}
+
+@media (max-width: 768px) {
+  .section_control .control-form_block {
+    margin-top: 2.5rem;
+  }
+}
+
+.section_control .control-form_block .form-list {
+  width: 46rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .section_control .control-form_block .form-list {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section_control .control-form_block .form-list .form-element:nth-child(2) {
+    margin-top: 4rem;
+  }
+  .section_control .control-form_block .form-list .form-element:nth-child(3) {
+    margin-top: 4rem;
+  }
+}
+
+.section_control .control-form_block .form-list .form-element input {
+  width: 14.5rem;
+  font-family: FuturaBookC;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #363636;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.section_control .control-form_block .form-list .form-element input::-webkit-input-placeholder {
+  color: #363636;
+}
+
+.section_control .control-form_block .form-list .form-element input:-ms-input-placeholder {
+  color: #363636;
+}
+
+.section_control .control-form_block .form-list .form-element input::-ms-input-placeholder {
+  color: #363636;
+}
+
+.section_control .control-form_block .form-list .form-element input::placeholder {
+  color: #363636;
+}
+
+@media (max-width: 768px) {
+  .section_control .control-form_block .form-list .form-element input::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+  .section_control .control-form_block .form-list .form-element input:-ms-input-placeholder {
+    color: #ffffff;
+  }
+  .section_control .control-form_block .form-list .form-element input::-ms-input-placeholder {
+    color: #ffffff;
+  }
+  .section_control .control-form_block .form-list .form-element input::placeholder {
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 768px) {
+  .section_control .control-form_block .form-list .form-element input {
+    width: 21.25rem;
+    color: #ffffff;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  }
+}
+
+.section_control .control-form_block .form-list label {
+  display: block;
+  font-family: FuturaBookC;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  color: rgba(54, 54, 54, 0.5);
+}
+
+@media (max-width: 768px) {
+  .section_control .control-form_block .form-list label {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media (max-width: 768px) {
+  .section_control .control-form_block .form-list .form-button {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    margin-top: 3.875rem;
+  }
+}
+
+.section_control .control-form_block .form-list .form-button button {
+  width: 200px;
+  -webkit-box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+          box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+}
+
+@media (max-width: 768px) {
+  .section_control .control-form_block .form-list .form-button button {
+    width: 340px;
+  }
+}
+
+.section_control .control-form_block .form-list .form-checkbox {
+  width: 100%;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #181818;
+}
+
+@media (max-width: 768px) {
+  .section_control .control-form_block .form-list .form-checkbox {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-top: 1.625rem;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+.section_control .control-form_block .form-list .form-checkbox input {
+  width: 18px;
+  height: 18px;
+  border-radius: 0;
+}
+
+.section_control .control-form_block .form-list .form-checkbox label {
+  padding-left: 0.5rem;
+  color: #181818;
+}
+
+@media (max-width: 768px) {
+  .section_control .control-form_block .form-list .form-checkbox label {
+    color: #ffffff;
+  }
 }
 
 .cards_block {

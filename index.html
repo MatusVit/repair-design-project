@@ -190,18 +190,28 @@
 
             <div class="control-form_block">
                 <form action="" method="post">
-                    <label for="name">Name</label>
-                    <input id="name" type="text" placeholder="What is your name:">
-                    <label for="phone">Phone</label>
-                    <input id="phone" type="text" placeholder="Your phone number:">
-                    <button>
-                        Submit
-                    </button>
-                    <p>
-                        <label>
-                            <input type="checkbox"> I agree to the processing of personal data
-                        </label>
-                    </p>
+                    <ul class="form-list">
+                        <li class="form-element">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" placeholder="What is your name:">
+                        </li>
+                        <li class="form-element">
+                            <label for="phone">Phone</label>
+                            <input id="phone" type="text" placeholder="Your phone number:">
+                        </li>
+                        <li class="form-button">
+                            <button>
+                                Submit
+                            </button>
+                        </li>
+                        <li class="form-checkbox">
+                                <input id="agree" type="checkbox">
+                                <label for="agree">
+                                     I agree to the processing of personal data
+                                </label>
+                        </li>
+                    </ul>
+
                 </form>
             </div>
 
