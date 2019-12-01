@@ -1402,10 +1402,66 @@ footer .header-button button {
   margin-right: 5%;
 }
 
+.section_design {
+  margin-top: 112px;
+  position: relative;
+}
+
+.section_design .bg-design {
+  width: 100%;
+  height: 440px;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  background-color: #131313;
+}
+
+@media (max-width: 640px) {
+  .section_design .bg-design {
+    height: 113%;
+  }
+}
+
+@media (max-width: 640px) {
+  .section_design .section_heading h2 {
+    color: #ffffff;
+  }
+}
+
+.section_design .cards_block {
+  margin-bottom: 0;
+}
+
 .section_design .section-describe {
   max-width: 760px;
   margin: 0 auto;
+  padding: 0 18px;
   text-align: center;
+  font-family: FuturaBookC;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #363636;
+}
+
+@media (max-width: 640px) {
+  .section_design .section-describe {
+    color: #ffffff;
+  }
+}
+
+.section_design .card-describe {
+  position: relative;
+  height: auto;
+}
+
+.section_design .card-describe .card-list {
+  padding-bottom: 45px;
+}
+
+.section_design .card-box_price {
+  position: absolute;
+  bottom: -25px;
 }
 
 .section_steps {
