@@ -3,6 +3,7 @@
 //-------------------
 .section_contacts{
     position: relative;
+    padding-top: 52px;
     .bg-contact{
         @media (max-width: 640px) {
             display: none;
@@ -23,9 +24,15 @@
     }
     
     .section_heading {
-        margin-bottom: 0;
+        // margin-top: 52px;
+        margin-bottom: 52px;
         h2 {
             color: $color-accent;
+        }
+        .section_heading-icon-icon img{
+            height: 39px;
+            width: 39px;
+            padding: 10px;
         }
     }
     

@@ -1943,6 +1943,7 @@ footer .header-button button {
 
 .section_contacts {
   position: relative;
+  padding-top: 52px;
   text-align: center;
 }
 
@@ -1970,11 +1971,17 @@ footer .header-button button {
 }
 
 .section_contacts .section_heading {
-  margin-bottom: 0;
+  margin-bottom: 52px;
 }
 
 .section_contacts .section_heading h2 {
   color: #e3b873;
+}
+
+.section_contacts .section_heading .section_heading-icon-icon img {
+  height: 39px;
+  width: 39px;
+  padding: 10px;
 }
 
 .contact-map img {
