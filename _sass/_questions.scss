@@ -1,0 +1,93 @@
+//-------------------
+//*  >>> Questions
+//-------------------
+.section_questions {
+    max-width: 882px;
+    margin: 2rem auto;
+    padding: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:  #181818;
+    color: #ffffff;
+  }
+  
+  .questions-form {
+    max-width: 510px;
+    text-align: center;
+  }
+
+  .questions-form_block {
+    padding: 1.75rem 3rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: $color-bg;
+    .form-heading {
+        width: 293px;
+        font-family: FuturaDemiC;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .form-list {
+        min-width: 25.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .form-element {
+            width: 100%;
+            margin-top: 2.5rem;
+        }
+        .form-element input {
+            width: 100%;
+            font-family: FuturaBookC;
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+            color: #ffffff;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            background-color: rgba(0, 0, 0, 0);
+            &::placeholder {
+                color: #ffffff;
+            }
+        }
+        label {
+            display: block;
+            text-align: left;
+            font-family: FuturaBookC;
+            font-size: 0.9375rem;
+            line-height: 1.25rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .form-button {
+            order: 5;
+            margin-top: 2.5rem;
+            align-self: center;
+            button {
+                width: 213px;
+                height: 51px;
+                box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+            }
+        }
+        .form-checkbox {
+            width: 100%;
+            order: 4;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            input {
+                width: 18px;
+                height: 18px;
+                border-radius: 0;
+            }
+            label {
+                padding-left: 0.5rem;
+                color: #ffffff;
+            }
+        }
+    }
+}

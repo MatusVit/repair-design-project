@@ -1796,6 +1796,7 @@ footer .header-button button {
 .section_questions {
   max-width: 882px;
   margin: 2rem auto;
+  padding: 34px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1806,13 +1807,138 @@ footer .header-button button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: black;
+  background: #181818;
   color: #ffffff;
 }
 
 .questions-form {
   max-width: 510px;
   text-align: center;
+}
+
+.questions-form_block {
+  padding: 1.75rem 3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.questions-form_block .form-heading {
+  width: 293px;
+  font-family: FuturaDemiC;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.questions-form_block .form-list {
+  min-width: 25.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.questions-form_block .form-list .form-element {
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.questions-form_block .form-list .form-element input {
+  width: 100%;
+  font-family: FuturaBookC;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #ffffff;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+}
+
+.questions-form_block .form-list .form-element input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.questions-form_block .form-list .form-element input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.questions-form_block .form-list .form-element input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.questions-form_block .form-list .form-element input::placeholder {
+  color: #ffffff;
+}
+
+.questions-form_block .form-list label {
+  display: block;
+  text-align: left;
+  font-family: FuturaBookC;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.questions-form_block .form-list .form-button {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+  margin-top: 2.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.questions-form_block .form-list .form-button button {
+  width: 213px;
+  height: 51px;
+  -webkit-box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+          box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+}
+
+.questions-form_block .form-list .form-checkbox {
+  width: 100%;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.questions-form_block .form-list .form-checkbox input {
+  width: 18px;
+  height: 18px;
+  border-radius: 0;
+}
+
+.questions-form_block .form-list .form-checkbox label {
+  padding-left: 0.5rem;
+  color: #ffffff;
 }
 
 .contact-map {
