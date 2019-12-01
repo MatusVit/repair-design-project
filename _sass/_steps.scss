@@ -1,0 +1,104 @@
+//-------------------
+//*  >>> Steps
+//-------------------
+.section_steps {
+    @media (max-width: 960px){
+        display: none;
+    }
+
+    padding: 6rem 0 6rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    color: white;
+    grid-template-rows: 0.3fr 2fr 2fr 0.6fr;
+    color: #ffffff;
+    background-color: $color-bg;
+    
+    
+    .steps-heading {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .steps-pre_header {
+        margin-bottom: 18px;
+        font-family: FuturaDemiC;
+        font-size: 15px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    .section_heading-left {
+        margin-bottom: 0;
+    }
+    .steps-describe_step {
+        margin-top: 60px;
+        grid-area: 2 / 1 / 4 / 2;
+        .steps-describe_step-number {
+            margin-bottom: 22px;
+            font-family: Yeseva One;
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .steps-describe_step-header {
+            margin-bottom: 16px;
+            font-family: Yeseva One;
+            font-size: 15px;
+            line-height: 23px;
+            text-transform: uppercase;
+            color: $color-accent;
+        }
+        .steps-describe_step-text {
+            margin-bottom: 61px;
+            width: 337px;
+            font-family: FuturaBookC;
+            font-size: 15px;
+            line-height: 25px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.steps-block_steps {
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    .step-heading {
+        width: 19px;
+        margin-bottom: 17px;
+        font-family: Yeseva One;
+        font-size: 15px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border-bottom: 1px solid #e3b873;
+    }
+    .step-describe {
+        width: 127px;
+        font-family: FuturaBookC;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+
+    .steps-block_steps-step1:not(:first-child){
+       opacity: 0.5; 
+    }
+}
+
+.steps-describe_arrows {
+    display: flex;
+    width: 287px;
+    justify-content: space-between;
+    img {
+        opacity: 36%;
+    }
+    img.active {
+        opacity: 100%;
+    }
+}
+
+.steps-describe_image {
+    grid-area: 3 / 2 / 5 / 3;
+}

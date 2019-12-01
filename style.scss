@@ -9,49 +9,7 @@
 @import "_sass/advantages";
 @import "_sass/fantasies";
 @import "_sass/design";
-
-
-
-
-
-//-------------------
-//*  >>> Steps
-//-------------------
-.section_steps {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 0.5fr 2fr 2fr 2fr;
-  color: #ffffff;
-  background-color: $color-bg;
-}
-
-.steps-heading {
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-.steps-pre_header {
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.steps-describe_step {
-  grid-area: 2 / 1 / 4 / 2;
-}
-
-.steps-block_steps {
-  grid-area: 2 / 2 / 3 / 3;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
-.steps-describe_arrows {
-  grid-area: 4 / 1 / 5 / 2;
-}
-
-.steps-describe_image {
-  grid-area: 3 / 2 / 5 / 3;
-}
+@import "_sass/steps";
 
 //-------------------
 //*  >>> Team

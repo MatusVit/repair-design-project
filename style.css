@@ -1465,17 +1465,28 @@ footer .header-button button {
 }
 
 .section_steps {
+  padding: 6rem 0 6rem 2rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;
-  -ms-grid-rows: 0.5fr 2fr 2fr 2fr;
-      grid-template-rows: 0.5fr 2fr 2fr 2fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 1rem;
+  color: white;
+  -ms-grid-rows: 0.3fr 2fr 2fr 0.6fr;
+      grid-template-rows: 0.3fr 2fr 2fr 0.6fr;
   color: #ffffff;
   background-color: #131313;
 }
 
-.steps-heading {
+@media (max-width: 960px) {
+  .section_steps {
+    display: none;
+  }
+}
+
+.section_steps .steps-heading {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
@@ -1483,17 +1494,51 @@ footer .header-button button {
   grid-area: 1 / 1 / 2 / 2;
 }
 
-.steps-pre_header {
+.section_steps .steps-pre_header {
+  margin-bottom: 18px;
+  font-family: FuturaDemiC;
+  font-size: 15px;
+  line-height: 21px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
-.steps-describe_step {
+.section_steps .section_heading-left {
+  margin-bottom: 0;
+}
+
+.section_steps .steps-describe_step {
+  margin-top: 60px;
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-area: 2 / 1 / 4 / 2;
+}
+
+.section_steps .steps-describe_step .steps-describe_step-number {
+  margin-bottom: 22px;
+  font-family: Yeseva One;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.section_steps .steps-describe_step .steps-describe_step-header {
+  margin-bottom: 16px;
+  font-family: Yeseva One;
+  font-size: 15px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #e3b873;
+}
+
+.section_steps .steps-describe_step .steps-describe_step-text {
+  margin-bottom: 61px;
+  width: 337px;
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
 }
 
 .steps-block_steps {
@@ -1510,12 +1555,45 @@ footer .header-button button {
       grid-template-rows: 1fr 1fr;
 }
 
+.steps-block_steps .step-heading {
+  width: 19px;
+  margin-bottom: 17px;
+  font-family: Yeseva One;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-bottom: 1px solid #e3b873;
+}
+
+.steps-block_steps .step-describe {
+  width: 127px;
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.steps-block_steps .steps-block_steps-step1:not(:first-child) {
+  opacity: 0.5;
+}
+
 .steps-describe_arrows {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 4 / 1 / 5 / 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 287px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.steps-describe_arrows img {
+  opacity: 36%;
+}
+
+.steps-describe_arrows img.active {
+  opacity: 100%;
 }
 
 .steps-describe_image {
