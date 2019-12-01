@@ -7,23 +7,21 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    @media (max-width: 1024px){
+    @media (max-width: 1024px) {
         justify-content: center;
     }
-    @media (max-width: 640px){
+    @media (max-width: 640px) {
         display: none;
     }
-    
     .advantages-circle-image {
         max-width: 95%;
         img {
             height: auto;
             max-width: 100%;
         }
-        @media (max-width: 1024px){
+        @media (max-width: 1024px) {
             display: none;
         }
-
     }
     .advantages-form {
         display: flex;
@@ -38,7 +36,6 @@
         flex-direction: column;
         align-items: center;
         background-color: $color-bg;
-        
         .form-heading {
             width: 293px;
             font-family: FuturaDemiC;
@@ -47,18 +44,15 @@
             text-align: center;
             color: #FFFFFF;
         }
-        
         .form-list {
             min-width: 25.5rem;
             display: flex;
             flex-direction: column;
             align-items: center;
-        
             .form-element {
                 width: 100%;
                 margin-top: 2.5rem;
             }
-
             .form-element input {
                 width: 100%;
                 font-family: FuturaBookC;
@@ -72,7 +66,6 @@
                     color: #ffffff;
                 }
             }
-
             label {
                 display: block;
                 font-family: FuturaBookC;
@@ -80,7 +73,6 @@
                 line-height: 1.25rem;
                 color: rgba(255, 255, 255, 0.5);
             }
-
             .form-button {
                 order: 5;
                 margin-top: 2.5rem;

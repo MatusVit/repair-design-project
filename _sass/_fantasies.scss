@@ -1,0 +1,91 @@
+//-------------------
+//*  >>> Fantasies
+//-------------------
+.section_fantasies {
+    margin-top: 200px;
+    padding: 18px;
+    background: url(assets/images/fantasies-bg.jpg) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    @media (max-width: 1024px) {
+        display: none;
+    }
+}
+
+.section_fantasies-wrapper {
+    max-width: 78rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.fantasies-describe_block {
+    padding-right: 40px;
+    flex-grow: 1;
+    .fantasies-describe_block-list {
+        margin-top: 47px;
+        li {
+            margin-bottom: 25px;
+            font-family: 'Proxima Nova';
+            font-size: 20px;
+            color: #ffffff;
+        }
+        li:first-child {
+            text-decoration: underline;
+            color: $color-accent;
+        }
+    }
+}
+
+.fantasies-images_block1 {
+    margin-right: 40px;
+    .fantasies-image-1 {
+        margin-bottom: 40px;
+    }
+}
+
+.fantasies-images_block2 {
+    margin-top: -96px;
+    align-self: flex-start;
+    .fantasies-image-3 {
+        margin-bottom: 40px;
+    }
+}
+
+.section_fantasies-mobile {
+    display: none;
+    @media (max-width: 1024px) {
+        display: block;
+    }
+    padding: 18px;
+    .section_heading-left h2 {
+        margin: 24px auto;
+        text-align: center;
+    }
+    .fantasies-mobile-carousel {
+        position: relative;
+        img {
+            width: 100%;
+        }
+        .fantasies-mobile-carousel-arrows {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img {
+              width: 36px;
+            }
+
+            .carousel_block-arrow-left {
+              margin-left: 5%;
+            }
+          
+            .carousel_block-arrow-right {
+              margin-right: 5%;
+            }
+        }
+    }
+}

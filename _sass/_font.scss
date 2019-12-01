@@ -32,4 +32,13 @@
     url("https://nomail.com.ua/files/woff/363c763618808869720c6ca7b4059566.woff") format("woff");
 }
 
+@font-face {
+	font-family: 'Proxima Nova';
+	src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+		url('../assets/font/ProximaNova-Regular.woff') format('woff'),
+		url('../assets/font/ProximaNova-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic");

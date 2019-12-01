@@ -19,6 +19,13 @@
   src: local("FuturaBookC"), url("https://nomail.com.ua/files/woff/363c763618808869720c6ca7b4059566.woff") format("woff");
 }
 
+@font-face {
+  font-family: 'Proxima Nova';
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../assets/font/ProximaNova-Regular.woff") format("woff"), url("../assets/font/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 p {
   font-family: "FuturaBookC", sans-serif;
   font-size: 1.125rem;
@@ -1278,65 +1285,121 @@ footer .header-button button {
 }
 
 .section_fantasies {
+  margin-top: 200px;
+  padding: 18px;
   background: url(assets/images/fantasies-bg.jpg) no-repeat;
-  color: #fff;
+  background-size: 100%;
+  background-position: center;
+}
+
+@media (max-width: 1024px) {
+  .section_fantasies {
+    display: none;
+  }
 }
 
 .section_fantasies-wrapper {
-  max-width: 64rem;
+  max-width: 78rem;
   margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr (354px)[2];
-      grid-template-columns: 2fr repeat(2, 354px);
-  -ms-grid-rows: (1fr)[2] (5fr)[2] (1fr)[2];
-      grid-template-rows: repeat(2, 1fr) repeat(2, 5fr) repeat(2, 1fr);
-  grid-column-gap: 32px;
-  grid-row-gap: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .fantasies-describe_block {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 3 / 1 / 6 / 2;
+  padding-right: 40px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
-.fantasies-image-1 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 2 / 5 / 3;
-  background: grey;
+.fantasies-describe_block .fantasies-describe_block-list {
+  margin-top: 47px;
 }
 
-.fantasies-image-2 {
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 5 / 2 / 8 / 3;
-  background-color: grey;
+.fantasies-describe_block .fantasies-describe_block-list li {
+  margin-bottom: 25px;
+  font-family: 'Proxima Nova';
+  font-size: 20px;
+  color: #ffffff;
 }
 
-.fantasies-image-3 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 3 / 4 / 4;
-  background-color: grey;
+.fantasies-describe_block .fantasies-describe_block-list li:first-child {
+  text-decoration: underline;
+  color: #e3b873;
 }
 
-.fantasies-image-4 {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-area: 4 / 3 / 7 / 4;
-  background-color: grey;
+.fantasies-images_block1 {
+  margin-right: 40px;
+}
+
+.fantasies-images_block1 .fantasies-image-1 {
+  margin-bottom: 40px;
+}
+
+.fantasies-images_block2 {
+  margin-top: -96px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.fantasies-images_block2 .fantasies-image-3 {
+  margin-bottom: 40px;
+}
+
+.section_fantasies-mobile {
+  display: none;
+  padding: 18px;
+}
+
+@media (max-width: 1024px) {
+  .section_fantasies-mobile {
+    display: block;
+  }
+}
+
+.section_fantasies-mobile .section_heading-left h2 {
+  margin: 24px auto;
+  text-align: center;
+}
+
+.section_fantasies-mobile .fantasies-mobile-carousel {
+  position: relative;
+}
+
+.section_fantasies-mobile .fantasies-mobile-carousel img {
+  width: 100%;
+}
+
+.section_fantasies-mobile .fantasies-mobile-carousel .fantasies-mobile-carousel-arrows {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section_fantasies-mobile .fantasies-mobile-carousel .fantasies-mobile-carousel-arrows img {
+  width: 36px;
+}
+
+.section_fantasies-mobile .fantasies-mobile-carousel .fantasies-mobile-carousel-arrows .carousel_block-arrow-left {
+  margin-left: 5%;
+}
+
+.section_fantasies-mobile .fantasies-mobile-carousel .fantasies-mobile-carousel-arrows .carousel_block-arrow-right {
+  margin-right: 5%;
 }
 
 .section_design .section-describe {
