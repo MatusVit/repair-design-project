@@ -1,0 +1,84 @@
+//-------------------
+//*  >>> Team
+//-------------------
+.section_team {
+    padding-top: 112px;
+    padding-bottom: 80px;
+    position: relative;
+
+
+    .bg-team {
+        width: 100%;
+        height: 480px;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        background-color: $color-bg;
+        @media (max-width: 640px){
+            height: 100%;
+        }
+    }
+    .section_heading {
+        margin-bottom: 24px;
+        color: #ffffff;
+    }
+    .section-describe {
+        margin: 0 auto 88px;
+    }
+    .section-describe {
+        max-width: 476px;
+        font-family: FuturaBookC;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .card {
+        position: relative;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .card-describe {
+        width: 76%;
+        height: auto;
+        margin: -3rem auto 0;
+        padding: 0;
+        text-align: center;
+    }
+    .card-heading {
+        margin: 1rem 0 0;
+    }
+    .card-text {
+        padding: 0.8rem 0;
+    }
+    .card-box_experience {
+        background-color: $color-accent;
+        padding: 0.8rem 0;
+        font-size: 0.8125rem;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    .card-top_icon {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: -35px;
+        left: -35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-accent;
+    }
+    .line55 {
+        margin: 0 auto;
+    }
+    .section-describe.section-describe-2 {
+        margin-top: 18px;
+        font-size: 20px;
+        line-height: 34px;
+        color: $color-dark-grey;
+        @media (max-width: 640px){
+            color: #ffffff;
+        }
+    }
+}

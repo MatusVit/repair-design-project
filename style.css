@@ -1604,16 +1604,54 @@ footer .header-button button {
   grid-area: 3 / 2 / 5 / 3;
 }
 
+.section_team {
+  padding-top: 112px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.section_team .bg-team {
+  width: 100%;
+  height: 480px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-color: #131313;
+}
+
+@media (max-width: 640px) {
+  .section_team .bg-team {
+    height: 100%;
+  }
+}
+
+.section_team .section_heading {
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.section_team .section-describe {
+  margin: 0 auto 88px;
+}
+
 .section_team .section-describe {
   max-width: 476px;
+  font-family: FuturaBookC;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .section_team .card {
   position: relative;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .section_team .card-describe {
   width: 76%;
+  height: auto;
   margin: -3rem auto 0;
   padding: 0;
   text-align: center;
@@ -1655,6 +1693,19 @@ footer .header-button button {
 
 .section_team .line55 {
   margin: 0 auto;
+}
+
+.section_team .section-describe.section-describe-2 {
+  margin-top: 18px;
+  font-size: 20px;
+  line-height: 34px;
+  color: #363636;
+}
+
+@media (max-width: 640px) {
+  .section_team .section-describe.section-describe-2 {
+    color: #ffffff;
+  }
 }
 
 .section_clients .card {

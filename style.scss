@@ -10,51 +10,8 @@
 @import "_sass/fantasies";
 @import "_sass/design";
 @import "_sass/steps";
+@import "_sass/team";
 
-//-------------------
-//*  >>> Team
-//-------------------
-.section_team {
-  .section-describe {
-    max-width: 476px;
-  }
-  .card {
-    position: relative;
-  }
-  .card-describe {
-    width: 76%;
-    margin: -3rem auto 0;
-    padding: 0;
-    text-align: center;
-  }
-  .card-heading {
-    margin: 1rem 0 0;
-  }
-  .card-text {
-    padding: 0.8rem 0;
-  }
-  .card-box_experience {
-    background-color: $color-accent;
-    padding: 0.8rem 0;
-    font-size: 0.8125rem;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-  .card-top_icon {
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    top: -35px;
-    left: -35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $color-accent;
-  }
-  .line55 {
-    margin: 0 auto;
-  }
-}
 
 //-------------------
 //*  >>> Clients
