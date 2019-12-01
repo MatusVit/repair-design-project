@@ -1,0 +1,63 @@
+//-------------------
+//*  >>> Clients
+//-------------------
+.section_clients {
+    @media (max-width: 640px){
+        display: none;  
+    }
+
+
+    .section-describe {
+        margin: 0 auto 88px;
+        font-size: 20px;
+        line-height: 34px;
+        color: $color-dark-grey;
+        @media (max-width: 640px) {
+            color: #ffffff;
+        }
+    }
+    .card {
+        width: 376px;
+        height: 428px;
+        box-shadow: 0.25rem 0.25rem 0.5rem 0rem rgba(0, 0, 0, 0.14);
+        align-items: flex-start;
+        position: relative;
+        .card-heading {
+            display: flex;
+            align-items: center;
+            padding: 2rem 1rem 0 1rem;
+        }
+        .card-heading-text {
+            padding-left: 2rem;
+            font-size: 1.125rem;
+            font-weight: bold;
+        }
+        .card-text {
+            padding: 1rem;
+            font-family: FuturaBookC;
+            font-size: 15px;
+            line-height: 180%;
+            color: #959595;
+        }
+        .card-bottom_box {
+            width: 294px;
+            height: 54px;
+            background-color: $color-accent;
+            position: absolute;
+            bottom: -5%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .card-bottom {
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            &:first-child {
+                border-right: #ffffff solid 1px;
+            }
+            .card-bottom-text {
+                padding: 0 1rem;
+            }
+        }
+    }
+}

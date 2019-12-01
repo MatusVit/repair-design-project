@@ -1708,6 +1708,25 @@ footer .header-button button {
   }
 }
 
+@media (max-width: 640px) {
+  .section_clients {
+    display: none;
+  }
+}
+
+.section_clients .section-describe {
+  margin: 0 auto 88px;
+  font-size: 20px;
+  line-height: 34px;
+  color: #363636;
+}
+
+@media (max-width: 640px) {
+  .section_clients .section-describe {
+    color: #ffffff;
+  }
+}
+
 .section_clients .card {
   width: 376px;
   height: 428px;
@@ -1737,6 +1756,10 @@ footer .header-button button {
 
 .section_clients .card .card-text {
   padding: 1rem;
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 180%;
+  color: #959595;
 }
 
 .section_clients .card .card-bottom_box {
