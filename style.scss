@@ -6,41 +6,12 @@
 @import "_sass/_projects";
 @import "_sass/_control";
 @import "_sass/_types";
+@import "_sass/advantages";
 
 
 
 
-//-------------------
-//*  >>> Advantages
-//-------------------
-.section_advantages {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 7.5rem;
-  .advantages-circle-image {
-    width: 50%;
-  }
-  .advantages-form {
-    form {
-      max-width: 32rem;
-      background-color: $color-bg;
-      color: #ffffff;
-      padding: 2rem;
-    }
-    .advantages-banner_pig {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 2rem;
-      color: $color-accent;
-      .advantages-banner_pig-text {
-        padding: 1rem;
-      }
-    }
-  }
-}
+
 
 //-------------------
 //*  >>> Fantasies
