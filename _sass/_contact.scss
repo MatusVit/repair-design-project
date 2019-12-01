@@ -1,0 +1,42 @@
+//-------------------
+//*  >>> Contacts
+//-------------------
+.section_contacts{
+    position: relative;
+    .bg-contact{
+        @media (max-width: 640px) {
+            display: none;
+        }
+        position: absolute;
+        bottom: 0;  
+        width: 100%;
+        height: 150%;
+        z-index: -1;
+
+        background-color: black;
+        background-image: url(../assets/images/map-bg.png);
+        background-size: cover;
+    }
+    text-align: center;
+    @media (max-width: 640px){
+        background-color: #181818;
+    }
+    
+    .section_heading {
+        margin-bottom: 0;
+        h2 {
+            color: $color-accent;
+        }
+    }
+    
+}
+.contact-map {
+    img {
+        margin: 2rem auto;
+        height: 100%;
+        @media (max-width: 640px){
+            
+            width: 100%;
+        }
+    }
+}
